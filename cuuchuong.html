@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<script>
+  let multiplication = "<table border='1' cellpadding='3' cellspacing='0' bgcolor='black' style='color: white'>"
+  for(let i =2;i<=9;i++){
+      multiplication += "<tr>"
+      for (let j = 1; j <=9 ; j++) {
+          multiplication += "<td>"+i +"x"+j+"="+(i*j) + "</td>"
+          document.write("\t")
+      } multiplication += "</tr>"
+      document.write("<br>")
+  }multiplication+= "</table>"
+  document.write(multiplication)
+
+
+</script>
+
+
+</body>
+</html>
