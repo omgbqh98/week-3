@@ -41,31 +41,38 @@
 
 
 
-        for (let i = 1; i <= 5 ; i++) {
-            for (let k =5-i ; k >0 ; k--) {
-              document.write("&nbsp;&nbsp;");
-            }
-            for (let j = 1; j <= i ; j++) {
-                document.write("*")
-            }
-            document.write("<br>")
+        // for (let i = 1; i <= 5 ; i++) {
+        //     for (let k =5-i ; k >0 ; k--) {
+        //       document.write("&nbsp;&nbsp;");
+        //     }
+        //     for (let j = 1; j <= i ; j++) {
+        //         document.write("*")
+        //     }
+        //     document.write("<br>")
+        // }
+        //
+        //
+        //
+        // for (let i = 5; i >0 ; i--) {
+        //     for (let k = 5 - i ; k > 0  ; k--) {
+        //         document.write("&nbsp;&nbsp;");
+        //     }
+        //     for (let j = 1; j <=i ; j++) {
+        //       document.write("*")
+        //     }
+        //    document.write("<br>")
+        // }
+
+
+        for (let i = 1; i <=5 ; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if(j>=2&&j<=4&& i>=2&&i<=4){
+                    document.write("&nbsp;&nbsp;&nbsp");
+                }else {
+                    document.write("* ")
+                }
+                }document.write("<br>")
         }
-
-
-
-        for (let i = 5; i >0 ; i--) {
-            for (let k = 5 - i ; k > 0  ; k--) {
-                document.write("&nbsp;&nbsp;");
-            }
-            for (let j = 1; j <=i ; j++) {
-              document.write("*")
-            }
-           document.write("<br>")
-        }
-
-
-
-
 
 
 </script>
