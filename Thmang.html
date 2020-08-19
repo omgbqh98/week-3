@@ -11,14 +11,15 @@
 </style>
 <body>
 <input type="text" id="text">
-<input type="button" value="add" id="add" onclick="addarray">
-<input type="button" value="display" id="display" onclick="displayarray">
+<input type="button" value="add" id="add" onclick="addarray()">
+<input type="button" value="display" id="display" onclick="displayarray()">
 <p id="result"></p>
 <script>
 let x=0;
+let array =Array();
 function addarray(){
      array[x] =document.getElementById("text").value;
-    alert( "Element: " + array[x] + " Added at index " + x);
+    // alert( "Element: " + array[x] + " Added at index " + x);
     x++;
     document.getElementById("text").value=" ";
 }
