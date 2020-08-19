@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input type="button" value="play" onclick="game()">
+<body>
+<script>
+function game(){
+    let range=+prompt("rangefirst")
+    let range2=+prompt("rangelast")
+    let sobimat =Math.floor(Math.random()*((range2-range)+1))
+    let yournumber = +prompt("input number from"+" " +range +"-"+range2)
+
+    for(count=0;count<3;count++){
+        if(count==2){
+               alert("quá số lần đoán")
+               break;
+        }else{
+            if(yournumber==sobimat){
+                document.write("chúc mừng"+" ")
+                break;
+        }else {
+                if(yournumber<sobimat){
+                    alert("số bạn nhập nhỏ hơn số bí mật")
+                }else {
+                    alert("số bạn nhập lớn hơn số bí mật")
+                }
+            }
+        }yournumber=+prompt("input lai")
+       }
+
+    document.write("đáp án là:"+sobimat)
+}
+
+</script>
+</body>
+</html>
