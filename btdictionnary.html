@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="search">
+<input type="button" value="search" onclick="search1()">
+<p id="result"></p>
+<script>
+    // function search1() {
+    //     let search = document.getElementById("search").value;
+    //     let vietnamese = ['xin chao', 'chay', 'tro choi', 'da bong']
+    //     let english = ['hello', 'run', 'game', 'soccer']
+    //     let index;
+    //     for (let i = 0; i < vietnamese.length; i++) {
+    //         if (vietnamese.indexOf(search) !== -1) {
+    //             index = vietnamese.indexOf(search);
+    //             document.write(english[index]);
+    //             break;
+    //         } else {
+    //             document.write("không biết")
+    //             break;
+    //         }
+    //     }
+    // }
+    function search1() {
+        let search = document.getElementById("search").value;
+        let vietnamese = ['xin chao', 'chay', 'tro choi', 'da bong']
+        let english = ['hello', 'run', 'game', 'soccer']
+        let result = '';
+        for (let i = 0; i < english.length; i++) {
+            if (search === vietnamese[i]) {
+                result ="tiếng anh:" +english[i];
+                break;
+            } else if (search === english[i]) {
+                result ="tiếng việt:" + vietnamese[i];
+                break;
+            }
+            else {
+                result ="ko biết"
+            }
+        }document.getElementById("result").innerHTML=result;
+    }
+
+</script>
+</body>
+</html>
