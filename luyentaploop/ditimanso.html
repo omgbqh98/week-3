@@ -10,7 +10,7 @@
 function game(){
     let range=+prompt("rangefirst")
     let range2=+prompt("rangelast")
-    let sobimat =Math.floor(Math.random()*((range2-range)+1))
+    let sobimat =Math.floor(Math.random()*((range2-range)+1)+range)
     let yournumber = +prompt("input number from"+" " +range +"-"+range2)
 
     for(count=0;count<3;count++){
