@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let total =0;
+    let number=[1,6,4,75,3,5,]
+    let max=number[0];
+    let sum=0;
+    let count =0;
+    function checkmax(){
+        for (let i = 0; i < number.length; i++) {
+
+            if(number[i]>max){
+                max=number[i]
+            }
+        }return max
+
+    }document.writeln("giá trị max là:"+checkmax(max))
+    function checkbt(){
+        for (let i = 0; i < number.length; i++) {
+            sum += number[i];
+            }return sum
+    }document.writeln("tổng là:"+checkbt())
+function tb(){
+    for (let i = 0; i < number.length; i++) {
+        count++
+    }return count
+}document.writeln("số lượng giá trị trong mảng:"+tb())
+function total1(){
+        total=sum/count
+    return total
+}
+document.writeln("trung bình là:"+total1())
+</script>
+</body>
+</html>

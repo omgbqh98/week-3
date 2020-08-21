@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let temp;
+    let number=[1,5,3,7,9,4,6,69,14,12];
+    for (let i = 0; i <number.length ; i++) {
+        for (let j = i+1; j <number.length ; j++) {
+            if(number[i]<number[j]){
+               temp=number[i];
+                number[i]=number[j]
+                number[j]=temp
+            }
+        }
+    }document.write(number)
+
+</script>
+</body>
+</html>

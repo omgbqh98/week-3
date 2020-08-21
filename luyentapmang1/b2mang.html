@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [2, 3, 5, 4, 7,14, 9, 8, 2, 14, 10]
+    let max = arr[0];
+    let index= 0;
+    function check() {
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+    document.writeln(check(max));
+
+
+    function index1(){
+        for (let i = 0; i < arr.length; i++) {
+            if(max==arr[i]){
+                index=i
+            }
+        }
+        return index;
+    }document.writeln("vị trí thứ :"+" "+ index1());
+    // document.writeln()
+</script>
+</body>
+</html>

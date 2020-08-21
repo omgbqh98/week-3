@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    let arr1=["v"]
+      arr2=["ok","dc",34,"v","sad"]
+     let index;
+    document.writeln("sô giá trị ban đầu:"+arr2)
+    document.writeln("<br>")
+     for (let i = 0; i < arr1.length; i++) {
+         if (arr2.indexOf(arr1[i]) !== 1) {
+             index = arr2.indexOf(arr1[i])
+         }
+     }
+    for (let i = index; i <arr2.length ; i++) {
+        arr2[i]=arr2[i+1]
+    }document.writeln("số phần tử đã dc xóa: "+ arr2)
+</script>
+</body>
+</html>
