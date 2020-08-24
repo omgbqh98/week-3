@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = [];
+    let size = +prompt("Input size: ");
+    let count = 0;
+    for (let i = 0; i < size; i++)
+        str[i] = prompt("Input " + i);
+    for (let i = 0; i < str.length; i++){
+        document.write(str[i] + " ");
+        // str = str.split(' ');
+    }
+
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] > '0'&&str[i] <= '9' ){
+            count++;
+        }
+    } document.write("<br>"+"có số kí tự số là: "+count);
+
+
+
+</script>
+
+</body>
+</html>
